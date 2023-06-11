@@ -15,7 +15,7 @@
 #     from http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html
 #
 # (2) Download files for build this image except Dockerfile
-#	  from https://github.com/oracle/docker-images/tree/main/OracleDatabase/SingleInstance/dockerfiles/19.3.0
+#     from https://github.com/oracle/docker-images/tree/main/OracleDatabase/SingleInstance/dockerfiles/19.3.0
 #
 # HOW TO BUILD THIS IMAGE
 # -----------------------
