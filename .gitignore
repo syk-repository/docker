@@ -1,0 +1,11 @@
+# DOCKER-COMPOSE GLOBAL ENVIRONMENT
+.env
+
+# SOURCE
+ROOT.war
+
+# nginx-certbot config
+prod/app/data/certbot
+
+# REQUIRED FILES TO BUILD ORACLE DB. (should be downloaded online)
+LINUX.X64_193000_db_home.zip
