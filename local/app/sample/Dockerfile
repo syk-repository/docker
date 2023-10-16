@@ -148,7 +148,11 @@ RUN set -eux; \
 		exit 1; \
 	fi
 	
+# ROOT.war	
 COPY ROOT.war $CATALINA_HOME/webapps/
 
-EXPOSE 8080
+# EXPOSE PORT SETTING*
+RUN sed -i 's/port="8080"/port="8001"/' ${CATALINA_HOME}/conf/server.xml
+
+# DEPLOY
 CMD ["catalina.sh", "run"]
