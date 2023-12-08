@@ -5,6 +5,7 @@ services:
     build:
       context: ./oracle-19c
       dockerfile: Dockerfile
+    restart: always
     environment:
       - ORACLE_SID=ORCL
       - ORACLE_PWD=${ORACLE_PASSWORD}
@@ -16,7 +17,6 @@ services:
       
   mariadb:
     image: mariadb
-    restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=${MARIADB_PASSWORD}
       - TZ=${TIME_ZONE}
